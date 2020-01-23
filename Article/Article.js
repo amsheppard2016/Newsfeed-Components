@@ -161,9 +161,7 @@ const createArticle = obj => {
     firstParagraph.textContent = obj.firstParagraph;
     secondParagraph.textContent = obj.secondParagraph;
     thirdParagraph.textContent = obj.thirdParagraph;
-    expandButton.textContent = "v";
-    expandButton.style.width = "10px";
-    expandButton.style.height = "10px";
+    expandButton.textContent = "\u25bc";
     expandButton.addEventListener("click", () => {
         console.log("clicked");
         article.classList.toggle("article-open");
